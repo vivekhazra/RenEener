@@ -13,8 +13,9 @@ Following are the sub-scripts of this main script:
 8. z-ENDGAME-CDO.sh										
  												
 # USAGE
-./run-master_renewal_energy.sh [for current date]						
-./run-master_renewal_energy.sh YYYYMMDD [for any other date]				
+ ./run-master_renewal_energy.sh [for current date]						
+
+ ./run-master_renewal_energy.sh YYYYMMDD [for any other date]				
 
 # CONTACTS
 Author : Vivekananda Hazra (vhazra@iitbbs.ac.in)
