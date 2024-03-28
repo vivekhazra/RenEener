@@ -1,7 +1,9 @@
 # Introduction
 The purpose of this script is to produce NetCDF files for renewal/wind energy from NCUM Global model outputs. 
-Pressure level variables are derived using the Exner interpolation tool developed at NCMRWF jointly by Dr. Mansi Bhowmik, Dr. A. Jaykumar and Dr. Saji Mohandas.
-Team: V Hazra, Sushant Kumar, Raghavendra Ashrit, Priya Singh
+Pressure level variables are derived using the Exner interpolation tool developed at NCMRWF jointly by Dr. Mansi Bhowmik, Dr. A. Jaykumar, and Dr. Saji Mohandas.
+# Team: 
+V Hazra, Sushant Kumar, Raghavendra Ashrit, Priya Singh
+# Details
 Following are the sub-scripts of this main script:
 1. input.sh				
 2. y-SUBMIT-SUBMIT-RE-SURF.pbs								
@@ -19,4 +21,5 @@ Following are the sub-scripts of this main script:
 
 # CONTACTS
 Author : Vivekananda Hazra (vhazra@iitbbs.ac.in)
+
 Version: 28-Mar-2024 
