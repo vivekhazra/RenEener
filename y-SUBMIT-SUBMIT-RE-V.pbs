@@ -1,0 +1,33 @@
+#!/bin/bash
+#PBS -N RenEner-VITR
+#PBS -l select=NODES:ncpus=36
+#PBS -l place=scatter
+#PBS -l walltime=02:00:00
+#PBS -q NCMRWF1
+#PBS -j oe
+#PBS -o log-vITR.output
+#PBS -e log-vITR.error
+
+cd $PBS_O_WORKDIR
+
+export OMP_NUM_THREADS=16
+module load gnu/pythonpackages/2.7.9
+module load gnu/packagesuite/1
+module load gnu/user-specific/rmedtoolbox_modules/1
+module load gnu/pyparsing/2.2.2
+module load gnu/python_dateutil/2.7.3
+module load gnu/pytz/2016.4
+module load gnu/pymp/0.4.2
+module load gnu/dask/1.1.4
+module load gnu/cloudpickle/0.5.3
+module load gnu/toolz/0.9.0
+module load gnu/dask/1.1.4
+module load cray-gnu/cdo_1.9.2
+module load gnu/mpi4py_gnu/3.0.0
+
+log=LOGD
+rm $log/exner_process_v_PDT_CYC_dayITR.log
+
+echo "job is running ..."
+
+aprun -j1 -n 1 -N 1 python vert-interp-re-vITR.py > $log/exner_process_v_PDT_CYC_dayITR.log
